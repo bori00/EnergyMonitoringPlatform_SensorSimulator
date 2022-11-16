@@ -1,0 +1,5 @@
+EXCHANGE_NAME = device-measurements
+HOST_NAME = localhost
+SENSOR_DATA_FILENAME = sensor_data.csv
+INTER_READING_TIME_MILLISECONDS = 10000
+DEVICE_ID = fa6c369b-6040-4304-a8c7-9edcecb462f6
