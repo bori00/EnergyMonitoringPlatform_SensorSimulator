@@ -33,6 +33,10 @@ public class MeasurementSender {
     private void setupExchange() throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost(configProperties.getHostName());
+        factory.setPort(configProperties.getHostPort());
+        factory.setUsername(configProperties.getRabbitmqUsername());
+        factory.setPassword(configProperties.getRabbitmqPassword());
+        factory.setVirtualHost(configProperties.getRabbitmqUsername());
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
         channel.exchangeDeclare(configProperties.getExchangeName(), "fanout");

@@ -26,4 +26,13 @@ public class ConfigProperties {
 
     @Value("${DEVICE_ID}")
     private String deviceId;
+
+    @Value("${HOST_PORT}")
+    private Integer hostPort;
+
+    @Value("${RABBITMQ_USERNAME}")
+    private String rabbitmqUsername;
+
+    @Value("${RABBITMQ_PASSWORD}")
+    private String rabbitmqPassword;
 }
